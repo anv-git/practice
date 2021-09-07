@@ -1,0 +1,47 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    &__navegation{
+        @media(min-width:$tablet-min){
+            display: flex; 
+            justify-content: space-between;
+        }
+        border-top: 1px solid $color_gray;
+        display: flex;
+        max-width: 100%;
+    }
+    &__logoMedicine{
+        display: flex;
+        align-self: flex-start;
+        width:150px;
+        height: auto;
+        margin-left: 14px;
+        @media(min-width:$tablet-min){
+            margin-left: 34px;
+        }
+    }
+    &__logoCompany{
+        width:60px;
+        height: auto;
+        margin: 5px;
+        display: flex;
+        align-self: flex-end;
+        
+    }
+    &__media{
+        display: none;
+        @media(min-width: $tablet-min){
+            display: flex;
+            gap:5px;
+            padding-right:10px;            
+        }
+    }
+    &__mediaImg{
+        @media(min-width: $tablet-min){
+            display: flex;
+            align-self: center;
+            width: 15%;
+            height:50%;
+        }
+    }
+}
