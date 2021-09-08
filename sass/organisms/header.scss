@@ -1,6 +1,24 @@
 .menu{
     display: flex;
     flex-direction: column;
+    &__anchor{
+        @media(min-width: $tablet-min){
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding: 0;
+            margin-top: 33px;
+            
+        }
+    }
+    &__list{
+        list-style-type: none;
+        display: none;
+        @media(min-width: $tablet-min){
+            display: unset;
+            padding: 0 25px;
+        }
+    }
     &__navegation{
         @media(min-width:$tablet-min){
             display: flex; 
@@ -15,7 +33,8 @@
         align-self: flex-start;
         width:150px;
         height: auto;
-        margin-left: 14px;
+        margin: 20px 0 0 14px;
+        cursor: pointer;
         @media(min-width:$tablet-min){
             margin-left: 34px;
         }
@@ -33,7 +52,8 @@
         @media(min-width: $tablet-min){
             display: flex;
             gap:5px;
-            padding-right:10px;            
+            padding-right:10px;    
+            margin-top: 20px;        
         }
     }
     &__mediaImg{
@@ -41,7 +61,8 @@
             display: flex;
             align-self: center;
             width: 15%;
-            height:50%;
+            height:45%;
+            cursor: pointer;
         }
     }
 }

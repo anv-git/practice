@@ -1,25 +1,12 @@
 .menu{
-    &__anchor{
-        @media(min-width: $tablet-min){
-            display: flex;
-            justify-content: center;
-            gap:48px;
-        }
-    }
-    &__list{
-        list-style-type: none;
-        display: none;
-        @media(min-width: $tablet-min){
-            display: unset;
-        }
-    }
     &__link{
         text-decoration: none;
         color: $color_black;
         @media(min-width: $tablet-min){
             &:hover{
                 background-color:$color_orange;
-                padding: 30px 5px;
+                padding: 30px 0;
+                color:$color-white;
             }
         }
     }
