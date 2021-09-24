@@ -1,0 +1,26 @@
+.Information{
+    &__bula{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background-color:$color_darkOrange;
+        color: $color_white;
+        padding: 7px 0 7px 0;
+        @media (min-width:$tablet-min){            
+           display: flex;
+           justify-content: flex-start;
+           padding: 25px 50px;
+        }
+        &:before{
+            content: '';
+            position: absolute;
+            width: 100%;
+            background-color: $color_darkBlue;
+            padding: 5px 0;
+            top: 60px;
+            @media (min-width:$tablet-min){
+                display: none;
+            }
+        }
+    }
+}
