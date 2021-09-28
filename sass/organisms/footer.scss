@@ -1,4 +1,16 @@
-.Information{
+.information{
+    background-color: $color_blueOcean;
+   
+    &__content{
+        @media (min-width:$tablet-min){
+            padding: 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas:  
+            "caution post"
+            "composition composition";
+        }
+    }
     &__bula{
         position: relative;
         display: flex;
@@ -7,15 +19,16 @@
         color: $color_white;
         padding: 7px 0 7px 0;
         @media (min-width:$tablet-min){            
-           display: flex;
-           justify-content: flex-start;
-           padding: 25px 50px;
+            display: flex;
+            justify-content: flex-start;
+            padding: 25px 50px;
         }
         &:before{
             content: '';
             position: absolute;
             width: 100%;
-            background-color: $color_darkBlue;
+            background: rgb(75,127,185);
+            background: linear-gradient(90deg, rgba(75,127,185,1) 16%, rgba(14,20,98,1) 100%);
             padding: 5px 0;
             top: 60px;
             @media (min-width:$tablet-min){
@@ -23,4 +36,122 @@
             }
         }
     }
+    &__Position{
+        padding: 30px 30px 0 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "phone sac"
+        "mail address";
+        margin: 0 auto;
+        justify-content: center;
+        @media (min-width:$tablet-min){
+            grid-area: post;
+            max-width: 200px;
+            
+        }
+    }
+    &__days{
+        border: solid 1px white;
+        grid-area: sac;
+        display: flex;
+        justify-content: center;
+        padding-left: 15px;
+        color: $color_white;
+        margin: 0;
+        font-size: 30px;
+        flex-direction: column;
+        font-family: 'Bebas Neue', cursive;
+        @media (min-width:$tablet-min){
+            border-left:none;
+            width: 200px;
+            height: 100px;
+        }
+        &--decrease{
+            font-size: 12px;
+            letter-spacing: 1.5px;
+            font-family: 'Jost', sans-serif;
+            font-weight: 500;
+        }
+    }
+    &__phone{
+        border: solid 1px white;
+        grid-area: phone;
+        padding: 40px 25px;
+        @media (min-width:$tablet-min){
+            border-right:none;
+            padding: 38px 25px;
+        }
+    }
+    &__mail{
+        border: solid 1px white;
+        grid-area: mail;
+        padding: 40px 25px;
+        @media (min-width:$tablet-min){
+            border-right:none;
+            padding: 38px 25px;
+        }
+    }
+    &__address{
+        border: solid 1px white;
+        grid-area: address;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color_white;
+        font-size: 13px;
+        padding: 14px;
+        margin: 0;
+        @media (min-width:$tablet-min){
+            border-left:none;
+            width: 200px;
+            height: 72px;
+            padding-right: 0;
+        }
+    }
+    &__targifor{
+        padding: 30px;
+        @media (min-width:$tablet-min){
+            grid-area: caution;
+            border-right:1px solid $color_white ;
+        }
+    }
+    &__alarm{
+        padding:10px;
+        font-size:14px ;
+        text-align: center;
+        background-color:$color_white;
+        border: 1px solid $color_darkBlue;
+        color: $color_darkBlue;
+    }
+    &__risks{
+        padding:10px;
+        font-size:14px ;
+        text-align: center;
+        background-color:$color_white;
+        border: 1px solid $color_darkBlue;
+        color: $color_darkBlue;
+
+    }
+    &__conposition{
+        color: $color_darkBlue;
+        font-size:10px;
+        text-align: center;
+        @media (min-width:$tablet-min){
+            grid-area: conposition;
+            padding-top: 20px;
+            text-align: start;
+            padding-bottom: 0;
+        }
+    }
+    &__copyright{
+        background-color: $color_penBlue;
+        font-size:13px;
+        color: $color_white;
+        font-weight: 400;
+        text-align: center;
+        padding: 20px 5px 20px 5px;
+        line-height: 20px;
+    }
 }
+
