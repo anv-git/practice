@@ -11,3 +11,18 @@
         }
     }
 }
+.faq{
+    &__btnPosition{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+    }
+    &__btn{
+        text-decoration: none;
+        color: $color_white;
+        padding:12px 100px;
+        border-radius: 30px;
+        background-color: $color_darkOrange;
+    }
+
+}
