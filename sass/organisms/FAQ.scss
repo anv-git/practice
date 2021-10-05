@@ -1,18 +1,27 @@
 .faq{
     overflow: hidden;
+  
     &__doubt{
         text-align: center;
-        font-size: 30px;
+        font-size: 22px;
         font-weight: 400;
         color: $color_white;
         background-color: $color_darkOrange;
         padding: 13px 0;
         clip-path: polygon(0px 0%, 89% -1px, 99.3% 103.03%, 0% 100%);
+        @media (min-width:$tablet-min){
+           background-color: $color_white;
+           color: $color_darkBlue;
+           text-align: start;
+           font-size: 40px;
+           padding-left: 40px;
+        }
     }
     &__positionTop{
         margin: 0 40px;
         padding-bottom: 30px;
         border-left: 3px solid $color_darkOrange;
+        
     }
     &__compositionQuestion{
         font-size: 22px;
@@ -26,6 +35,13 @@
     }
     &__position{
         padding-bottom: 60px;
+        
+    }
+    &__positionRow{
+        @media (min-width:$tablet-min){
+            display: flex;
+            flex-direction: row;
+        }
     }
     &__positionBottom{
         margin: 0 40px;
