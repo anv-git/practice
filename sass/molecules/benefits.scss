@@ -1,0 +1,95 @@
+.benefits{
+    @media (min-width:$tablet-min){
+        display: flex;
+    }
+    &__firstContent{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        
+    }
+    &__txt{
+        text-align: center;
+        font-size: 30px;
+        color: $color_darkBlue;
+        margin-bottom:40px;
+    }
+    &__mediceImg{
+        position: absolute;
+        max-width:90%;
+        top: 100px;
+        left: -20px;
+        @media (min-width:$tablet-min){
+            display: flex;
+            top: 550px;
+            left: 300px;
+            max-width:65%;
+        }
+    }
+    &__womanPosition{
+    position: relative;
+    }
+    &__WomanImg{
+        clip-path: polygon(0px 0%, 89% -1px, 99.3% 103.03%, 0% 100%);
+        max-width: 100%;
+        @media (min-width:$tablet-min){
+            max-width: 600px;
+            height: 700px;
+            object-fit: cover;
+            clip-path: polygon(0px 0%, 71% 0px, 99.47% 99.89%, 0% 100%);
+        }
+    }
+    &__secondContent{
+        @media (min-width:$tablet-min){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 80px;
+         }
+    }
+    &__allAbout{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &:nth-child(3){
+            margin-bottom: 50px;
+        }
+        @media (min-width:$tablet-min){
+           display: flex;
+           flex-direction: row;
+           justify-content: center;
+           align-content: center;
+            padding-bottom: 30px;
+        }
+    }
+    &__heart{
+        width: 70px;
+        display: flex;
+        align-self: center;
+        margin-top: 30px;
+        @media (min-width:$tablet-min){
+            width: 50px;
+            align-self: flex-start;
+            
+        }
+    }
+    &__heartTxt{
+        text-align: center;
+        font-size:25px;
+        color: $color_darkBlue;
+        padding: 15px;
+        font-weight: 500;
+        @media (min-width:$tablet-min){
+            text-align: start;
+            padding-left: 30px;
+            font-size: 23px;
+        }
+    }
+    &__resume{
+        text-align: center;
+        line-height: 28px;
+        font-size: 18px;
+        padding: 0 25px;
+    }
+}
+

@@ -41,3 +41,20 @@
        
     }
 }
+.benefits{
+    &__btnPosition{
+        display: none;
+        @media (min-width:$tablet-min){
+            display: flex;
+            justify-content: center;
+            
+        }
+    }
+    &__btn{
+        text-decoration: none;
+        color: $color_white;
+        padding:12px 60px;
+        border-radius: 30px;
+        background-color: $color_darkOrange;
+    }
+}
