@@ -29,3 +29,15 @@
     }
 
 }
+.products{
+    
+    &__link{
+        text-decoration: none;
+        color: $color_white;
+        padding:12px 60px;
+        border-radius: 30px;
+        background-color: $color_darkOrange;
+        
+       
+    }
+}
