@@ -1,0 +1,74 @@
+.blogCards{
+    background-color: $color_blueEye;
+    @media (min-width:$tablet-min){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+    &__multi{
+        @media (min-width:$tablet-min){
+            padding: 25px;
+        }
+    }
+    &__division{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        overflow: hidden;
+        @media (min-width:$tablet-min){
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            overflow: unset;
+        } 
+    }
+    &__txt{
+        background-color: $color_blueEye;
+        text-align: center;
+        font-size:25px;
+        color: $color_darkBlue;
+        padding: 20px ;
+        font-weight: 500;
+        @media (min-width:$tablet-min){
+           text-align: center;
+           font-size:40px;
+        }
+    }
+    &__imgPosition{
+        display: flex;
+        justify-content: center;
+    }
+    &__img{
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+    }
+    &__imgContent{
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        height: 300px;
+        
+    }
+    &__Title{
+        text-align: center;
+        font-size: 25px;
+        color: $color_darkBlue;
+        font-weight: 500;
+        padding: 25px 0;
+        margin-left: -25px;
+    }
+    &__resumePosition{
+        display: flex;
+        justify-content: center;
+        
+    }
+    &__resume{
+        width: 300px;
+        text-align: start;
+        padding-bottom: 25px;
+        line-height: 25px;
+        font-size: 18px;
+    }
+}

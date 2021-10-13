@@ -41,6 +41,27 @@
        
     }
 }
+.blogCards{
+    &__btn{
+        display: flex;
+        justify-content: center;
+        padding-bottom:35px;
+        
+        @media (min-width:$tablet-min){
+            display: flex;
+            justify-content: start;
+        }
+    }
+    &__link{
+        text-decoration: none;
+        color: $color_white;
+        padding:12px 60px;
+        border-radius: 30px;
+        background-color: $color_darkOrange;
+        
+       
+    }
+}
 .benefits{
     &__btnPosition{
         display: none;
