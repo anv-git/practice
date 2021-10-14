@@ -79,3 +79,21 @@
         background-color: $color_darkOrange;
     }
 }
+.toBuy{
+    &__btnPosition{
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        @media (min-width:$tablet-min){
+            
+        }
+    }
+    &__btn{
+        text-decoration: none;
+        color: $color_black;
+        padding:12px 40px;
+        border:1px solid $color_black;
+        border-radius: 30px;
+        background-color: $color_white;
+    }
+}
