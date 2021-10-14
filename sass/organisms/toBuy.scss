@@ -1,0 +1,45 @@
+.toBuy{
+    &__content{
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+        gap: 150px;
+        justify-content: center;
+    }
+    &__find{
+        width: 100%;
+        height: 55px;
+        text-align: center;
+        color: $color-white;
+        font-size: 30px;
+        padding-top: 15px;
+        background-color: $color_darkBlue;
+        @media (min-width:$tablet-min){
+            height: 75px;
+            font-size: 50px;
+            padding-top: 10px;
+        }
+    }
+    &__allPosition{
+        display: flex;
+        justify-content: center;        
+    }
+   &____imgTxtPosition{
+      display: flex;
+      justify-content: center;  
+   }
+   &__imgPosition{
+       width: 200px;
+       height: 100px;
+       display: flex;
+       justify-content: center;
+   }
+   &__img{
+       width: 200px;
+       height: 200px;
+   }
+   &__txt{
+       text-align: center;
+       padding: 20px 0;
+   }
+}
