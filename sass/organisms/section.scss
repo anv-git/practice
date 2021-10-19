@@ -13,7 +13,9 @@
         font-size: 19px;
         padding: 0 30px 10px 10px;
         @media(min-width:$tablet-min){
-             
+            padding: 0 200px 25px 0;
+            margin-left: 0;
+            line-height:30px;
     }
     }
     &__txtDesktop{
@@ -21,9 +23,9 @@
         @media(min-width:$tablet-min){
             display: unset;
             color: $color_white;
-            line-height:55px;
+            line-height:90px;
             margin: 60px 0 0 0;
-            font-size: 40px;
+            font-size: 60px;
             padding: 0 30px 10px 10px;
             font-weight: 500;
         }
@@ -64,13 +66,13 @@
         top: 220px;
         left: -130px;
         @media(min-width:$tablet-min){
-            height: 250px;
+            height: 380px;
             top: 150px;
         }
     }
   
    &__imgGeoPosition{
-       width: 100%;
+       width: 80%;
        height: 500px;
        overflow: hidden;
        position: relative;
